@@ -5,6 +5,7 @@ import Carousel from './components/Carousel/Carousel';
 import Footer from './components/Footer/Footer';
 import Form from './components/Form/Form';
 import Navbar from './components/Navbar/Navbar';
+import Personajes from './components/Personajes/Personajes';
 
 const App = () => {
 
@@ -65,14 +66,15 @@ const App = () => {
       <div>
         {
           contador === 0 ?
-          <Card nombre='Andrea' mail='Hola como estas?' imagen='https://picsum.photos/id/142/200/300' color='btn btn-primary' /> :  
+          <Card nombre='Andrea' mail='Hola como estas?' imagen='https://picsum.photos/id/141/200/300' color='btn btn-primary' /> :  
           contador >= 1 ?
-          <Card nombre='Andrea' mail='Hi, how r u?' imagen='https://picsum.photos/id/142/200/300' color='btn btn-primary' /> :
-          <Card nombre='Andrea' mail="Hallo, wie geht's dir?" imagen='https://picsum.photos/id/142/200/300' color='btn btn-primary' />
+          <Card nombre='Andrea' mail='Hi, how r u?' imagen='https://picsum.photos/id/144/200/300' color='btn btn-primary' /> :
+          <Card nombre='Andrea' mail="Hallo, wie geht's dir?" imagen='https://picsum.photos/id/143/200/300' color='btn btn-primary' />
         }
         <button className='btn btn-primary m-5' onClick={autorizacion}>Idioma</button>
       </div>
       <Form />
+      <Personajes />
     </>
   );
 }
